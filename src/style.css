@@ -46,3 +46,46 @@ footer {
 /* ================================ */
 /* Add your CSS below this line */
 /* ================================ */
+
+header {
+display: flex;
+justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+section {
+  display: flex;
+  gap: 40px;
+}
+
+#Sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#Products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+body {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  #Products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  #Products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
