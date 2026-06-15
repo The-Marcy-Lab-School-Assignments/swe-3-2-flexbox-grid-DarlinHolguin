@@ -1,6 +1,7 @@
 # Assignment 3.2 - Flexbox and Grid
 
 **Table of Contents**
+
 - [Reminders](#reminders)
 - [Setup](#setup)
 - [Short Response Questions](#short-response-questions)
@@ -32,7 +33,7 @@ Be mindful of your AI usage on assignments. AI can be a great tool to help your 
 
 **<details><summary>Be Okay With Being "Provisionally Complete"</summary>**
 
-At Marcy, we will deem an assignment as "complete" if you satisfy the requirements listed below. 
+At Marcy, we will deem an assignment as "complete" if you satisfy the requirements listed below.
 
 However, we know many of you will feel the urge to hold off on submitting until your assignment feels 100% perfect. That drive for excellence is an asset!
 
@@ -53,6 +54,7 @@ Learning to move forward with provisional completeness will help you make steady
 For guidance on setting up and submitting this assignment, refer to the Marcy lab School Docs How-To guide for [Working with Short Response and Coding Assignments](https://marcylabschool.gitbook.io/marcy-lab-school-docs/how-tos/working-with-assignments#how-to-work-on-assignments).
 
 Starter files have been provided in the `src/` directory:
+
 - `index.html` — Basic structure with header and footer provided
 - `style.css` — CSS reset and basic styles provided
 
@@ -85,6 +87,7 @@ Below are the design specifications showing what your product page should look l
 ![Specifications for the mobile view and for larger screens](./img/spec.png)
 
 **Key Layout Features:**
+
 - **Header**: Logo, navigation links, and search bar arranged horizontally with space between
 - **Navigation**: Links displayed in a row with consistent spacing
 - **Categories Sidebar**: The categories sidebar appears to the left of the product grid
@@ -122,19 +125,19 @@ Apply these to the **parent** element with `display: flex`:
 
 Apply these to **children** of a flex container:
 
-| Property | What It Does                                                    | Example     |
-| -------- | --------------------------------------------------------------- | ----------- |
-| `flex`   | Controls how much an item grows/shrinks relative to its sibling | `flex: 1;`  |
+| Property | What It Does                                                    | Example    |
+| -------- | --------------------------------------------------------------- | ---------- |
+| `flex`   | Controls how much an item grows/shrinks relative to its sibling | `flex: 1;` |
 
 ### Grid
 
 Apply these to the **parent** element with `display: grid`:
 
-| Property                | What It Does                     | Example                             |
-| ----------------------- | -------------------------------- | ----------------------------------- |
-| `display: grid`         | Makes the element a grid         | `display: grid;`                    |
-| `grid-template-columns` | Defines column sizes             | `grid-template-columns: 1fr 1fr;`   |
-| `gap`                   | Space between grid items         | `gap: 20px;`                        |
+| Property                | What It Does             | Example                           |
+| ----------------------- | ------------------------ | --------------------------------- |
+| `display: grid`         | Makes the element a grid | `display: grid;`                  |
+| `grid-template-columns` | Defines column sizes     | `grid-template-columns: 1fr 1fr;` |
+| `gap`                   | Space between grid items | `gap: 20px;`                      |
 
 **The `fr` unit** divides available space into fractions. `1fr 1fr 1fr` creates 3 equal columns.
 
@@ -152,6 +155,7 @@ Apply these to the **parent** element with `display: grid`:
 ```
 
 **Common Breakpoints:**
+
 - Small devices (landscape phones): `576px`
 - Medium devices (tablets): `768px`
 - Large devices (desktops): `992px`
@@ -164,25 +168,27 @@ The header and footer have been provided. Your job is to build out the main cont
 
 Inside `<main>`, below the `<h1>`, add the following structure:
 
-- [ ] A `<section>` to contain the sidebar and product grid
-  - [ ] Inside the section, use an `<aside>` for the sidebar
-    - [ ] Inside the aside, use an unordered list `<ul>` with list items for the categories
-  - [ ] Inside the section, next to the sidebar, use another unordered list `<ul>` for the products grid. Each list item will be a "product card" in the in the grid.
+- [x] A `<section>` to contain the sidebar and product grid
+  - [x] Inside the section, use an `<aside>` for the sidebar
+    - [x] Inside the aside, use an unordered list `<ul>` with list items for the categories
+  - [x] Inside the section, next to the sidebar, use another unordered list `<ul>` for the products grid. Each list item will be a "product card" in the in the grid.
 
 **Product Card Structure:**
 
 Inside the product grid, create at least 6 product cards. Each product card should be a list item containing:
 
-- [ ] A `<figure>` with an `<img>` and `<figcaption>` for the product name
-- [ ] A `<p>` for the product type (e.g., "Basketball Shoes")
-- [ ] A `<p>` for the price (e.g., "$149")
+- [x] A `<figure>` with an `<img>` and `<figcaption>` for the product name
+- [x] A `<p>` for the product type (e.g., "Basketball Shoes")
+- [x] A `<p>` for the price (e.g., "$149")
 
 **Notes:**
-- Pictures have been provided for you in the `src/img` folder. 
+
+- Pictures have been provided for you in the `src/img` folder.
 - For the `alt` text, simply use `"product 1"`, `"product 2"`, etc.
 - The text content for the product type and price can be the same for all products.
 
 **Tips:**
+
 - Create a single product card and then use copy-paste to create multiple product cards quickly
 
 ## Part 2: Flexbox Layout
@@ -191,12 +197,12 @@ Use the design spec to guide your layout. The spec shows spacing values and anno
 
 **Flexbox Requirements:**
 
-- [ ] Use `display: flex` on at least 4 different elements
-- [ ] Use `justify-content` to control spacing along the main axis
-- [ ] Use `align-items` to control alignment along the cross axis
-- [ ] Use `gap` to create consistent spacing between flex items
-- [ ] Use `flex-direction: column` where elements should stack vertically
-- [ ] Use `flex: 1` to make the picture grid expand to fill available space
+- [x] Use `display: flex` on at least 4 different elements
+- [x] Use `justify-content` to control spacing along the main axis
+- [x] Use `align-items` to control alignment along the cross axis
+- [x] Use `gap` to create consistent spacing between flex items
+- [x] Use `flex-direction: column` where elements should stack vertically
+- [x] Use `flex: 1` to make the picture grid expand to fill available space
 
 ## Part 3: Grid Layout
 
@@ -204,8 +210,8 @@ Use CSS Grid to create the product grid layout. The spec shows the grid structur
 
 **Grid Requirements:**
 
-- [ ] Use `display: grid` on the products container
-- [ ] Use `gap` to create spacing between grid items
+- [x] Use `display: grid` on the products container
+- [x] Use `gap` to create spacing between grid items
 
 ## Part 4: Media Queries (Responsive Design)
 
@@ -213,16 +219,16 @@ Make the product grid responsive using media queries. The grid should adapt to d
 
 **Media Query Requirements:**
 
-- [ ] Use `@media (min-width: 768px)` to add a second column on tablets
-- [ ] Use `@media (min-width: 992px)` to add a third column on desktops
-- [ ] Use `grid-template-columns` with the `fr` unit or `repeat()` function
+- [x] Use `@media (min-width: 768px)` to add a second column on tablets
+- [x] Use `@media (min-width: 992px)` to add a third column on desktops
+- [x] Use `grid-template-columns` with the `fr` unit or `repeat()` function
 
 ## Bonus Challenges
 
 If you finish early, try these enhancements:
 
-- [ ] Add a `:hover` effect to the category list items (underline and pointer cursor)
-- [ ] Make the `figcaption` bold
-- [ ] Add hover effects to the product cards (box shadow, transform scale, etc.)
-- [ ] Add a fourth column at an extra-large breakpoint (1200px)
-- [ ] Hide the categories sidebar on mobile and show it only on larger screens using `display: none` and media queries
+- [x] Add a `:hover` effect to the category list items (underline and pointer cursor)
+- [x] Make the `figcaption` bold
+- [x] Add hover effects to the product cards (box shadow, transform scale, etc.)
+- [x] Add a fourth column at an extra-large breakpoint (1200px)
+- [x] Hide the categories sidebar on mobile and show it only on larger screens using `display: none` and media queries
